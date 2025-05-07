@@ -34,6 +34,16 @@ body {
     color: lightgray !important;
 }
 
+.navbar-custom.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Cambia a un fondo más oscuro */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.navbar-custom.scrolled .nav-link,
+.navbar-custom.scrolled .navbar-brand {
+    color: lightgray !important; /* Cambia el color del texto */
+}
+
 .main-content {
     height: 80vh;
     display: flex;
@@ -46,23 +56,23 @@ body {
 
 .imagen-fondo {
     position: absolute;
-    width: calc(100% - 50px); /* Ajusta el ancho para respetar los márgenes */
+    width: calc(100% - 50px); 
     height: 400px;
-    top: 45%; /* Subir la imagen más cerca de la barra de navegación */
+    top: 45%; 
     transform: translateY(-50%);
     z-index: 5;
     overflow: hidden;
-    margin: 0 25px; /* Mismos márgenes que la barra de navegación */
-    border-radius: 45px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para un mejor efecto */
-    opacity: 0.8; /* Opacidad para el efecto de fondo */
+    margin: 0 25px; 
+    border-radius: 45px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    opacity: 0.8; 
 }
 
 .imagen-fondo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 45px; /* Asegura que la imagen también esté redondeada */
+    border-radius: 45px; 
 }
 
 .welcome-text {
@@ -83,27 +93,27 @@ body {
     font-size: 2rem;
     color: white;
     cursor: pointer;
-    animation: bounce-scale 2s infinite; /* Nueva animación */
+    animation: bounce-rotate 2s infinite; /* Nueva animación */
     z-index: 10;
     position: absolute;
-    top: calc(100% - 20px); /* Ajusta la posición según sea necesario */
+    top: calc(100% - 20px);
     left: 50%;
     transform: translateX(-50%);
-    transition: transform 0.3s ease; /* Suaviza el efecto al interactuar */
+    transition: transform 0.3s ease;
 }
 
 .arrow-down:hover {
-    transform: translateX(-50%) scale(1.2); /* Escala la flecha al pasar el mouse */
-    color: #ff0000; /* Cambia el color al rojo al pasar el mouse */
+    transform: translateX(-50%) scale(1.3) rotate(15deg); /* Escala y rotación al pasar el mouse */
+    color: #ff0000;
 }
 
-/* Animación de rebote y escalado */
-@keyframes bounce-scale {
+/* Nueva animación de rebote con rotación */
+@keyframes bounce-rotate {
     0%, 100% {
-        transform: translateY(0) scale(1); /* Posición inicial */
+        transform: translateY(0) rotate(0deg); /* Posición inicial */
     }
     50% {
-        transform: translateY(-10px) scale(1.1); /* Rebote hacia arriba y escalado */
+        transform: translateY(-15px) rotate(-10deg); /* Rebote hacia arriba con rotación */
     }
 }
 
@@ -120,25 +130,25 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Título de bienvenida */
+
 .welcome-title {
     font-size: 3rem;
     font-weight: bold;
     color: rgb(255, 0, 0);
     
     margin-bottom: 20px;
-    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-family: 'Playfair Display', serif;
 }
 
-/* Contenedor del texto y la imagen */
+
 .bienvenida-contenido {
     display: flex; 
     flex-direction: row; 
-    margin-top: 45px; /* Espacio entre el título y el contenido */
+    margin-top: 45px; 
     align-items: center; 
     justify-content: space-between; 
     width: 100%; 
-    gap: 130px; /* Espaciado entre el texto y la imagen */
+    gap: 130px; 
 }
 
 
@@ -153,11 +163,11 @@ body {
 
 .bienvenida-imagen {
     flex: 1;
-    max-width: 400px; /* Ancho máximo de la imagen */
+    max-width: 400px; 
     height: auto;
     border-radius: 20px;
     margin-right: 35px;
-    opacity: 0.8; /* Opacidad para el efecto de fondo */
+    opacity: 0.8; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     object-fit: cover; 
 }

@@ -215,35 +215,39 @@ body {
     margin-bottom: 20px;
 }
 
+/* Contenedor de certificados */
 .certificates-content {
-    display: flex; 
-    justify-content: space-between; 
-    gap: 20px; 
-    flex-wrap: wrap; 
+    display: flex; /* Flexbox para alinear los certificados horizontalmente */
+    justify-content: space-between; /* Espaciado uniforme entre los certificados */
+    gap: 40px; /* Espaciado entre las columnas */
+    margin-top: 20px;
 }
 
+/* Estilo de cada certificado */
 .certificate {
-    flex: 1; 
+    flex: 1; /* Cada certificado ocupa el mismo espacio */
     text-align: center;
     padding: 20px;
-    background-color: #ffffff00; 
+    background-color: #ffffff00; /* Fondo blanco */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
+/* Imagen de los certificados */
 .certificate-image {
-    width: 100%; 
-    max-width: 200px; 
-    height: auto; 
-    margin-bottom: 10px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    max-width: 400px; /* Aumenta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
+/* Texto debajo de las imágenes */
 .certificate p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #fffefe;
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    line-height: 1.8; /* Mejora la legibilidad */
+    color: #ffffff;
 }
 
 

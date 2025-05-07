@@ -1,4 +1,3 @@
-
 particlesJS('particles-js', {
     particles: {
         number: {
@@ -48,3 +47,26 @@ function scrollToSection() {
     const seccion = document.getElementById("bienvenida");
     seccion.scrollIntoView({ behavior: "smooth" });
 }
+
+// Selecciona la barra de navegación
+const navbar = document.querySelector('.navbar-custom');
+
+// Escucha el evento de desplazamiento
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled'); // Agrega la clase cuando se desplaza hacia abajo
+    } else {
+        navbar.classList.remove('scrolled'); // Elimina la clase cuando vuelve al inicio
+    }
+});
+
+// Selecciona todas las imágenes de los certificados
+const certificateImages = document.querySelectorAll('.certificate-image');
+
+// Agrega un evento de clic a cada imagen
+certificateImages.forEach((image) => {
+    image.addEventListener('click', () => {
+        // Alterna la clase "enlarged" para ampliar o reducir la imagen
+        image.classList.toggle('enlarged');
+    });
+});
