@@ -1,0 +1,163 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.navbar-custom {
+    background-color: rgba(223, 8, 8, 0.712);
+    border-radius: 45px;
+    color: white;
+    padding: 10px;
+    margin: 20px 25px;
+    z-index: 10;
+    position: relative;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: white !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: lightgray !important;
+}
+
+.main-content {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.imagen-fondo {
+    position: absolute;
+    width: calc(100% - 50px); /* Ajusta el ancho para respetar los márgenes */
+    height: 400px;
+    top: 45%; /* Subir la imagen más cerca de la barra de navegación */
+    transform: translateY(-50%);
+    z-index: 5;
+    overflow: hidden;
+    margin: 0 25px; /* Mismos márgenes que la barra de navegación */
+    border-radius: 45px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para un mejor efecto */
+    opacity: 0.8; /* Opacidad para el efecto de fondo */
+}
+
+.imagen-fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 45px; /* Asegura que la imagen también esté redondeada */
+}
+
+.welcome-text {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(32, 32, 32, 0.5);
+    z-index: 10;
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: 'Playfair Display', serif; 
+    color: rgb(233, 233, 233); 
+}
+
+.arrow-down {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    animation: bounce-scale 2s infinite; /* Nueva animación */
+    z-index: 10;
+    position: absolute;
+    top: calc(100% - 20px); /* Ajusta la posición según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease; /* Suaviza el efecto al interactuar */
+}
+
+.arrow-down:hover {
+    transform: translateX(-50%) scale(1.2); /* Escala la flecha al pasar el mouse */
+    color: #ff0000; /* Cambia el color al rojo al pasar el mouse */
+}
+
+/* Animación de rebote y escalado */
+@keyframes bounce-scale {
+    0%, 100% {
+        transform: translateY(0) scale(1); /* Posición inicial */
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1); /* Rebote hacia arriba y escalado */
+    }
+}
+
+.seccion-bienvenida {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 25px; 
+    
+    border-radius: 45px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Título de bienvenida */
+.welcome-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+}
+
+/* Contenedor del texto y la imagen */
+.bienvenida-contenido {
+    display: flex; 
+    flex-direction: row; 
+    margin-top: 45px; /* Espacio entre el título y el contenido */
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    gap: 130px; /* Espaciado entre el texto y la imagen */
+}
+
+
+.bienvenida-contenido p {
+    flex: 1; 
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: white;
+    text-align: justify; 
+}
+
+
+.bienvenida-imagen {
+    flex: 1;
+    max-width: 400px; /* Ancho máximo de la imagen */
+    height: auto;
+    border-radius: 20px;
+    margin-right: 35px;
+    opacity: 0.8; /* Opacidad para el efecto de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover; 
+}
