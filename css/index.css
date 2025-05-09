@@ -35,13 +35,13 @@ body {
 }
 
 .navbar-custom.scrolled {
-    background-color: rgba(0, 0, 0, 0.9); /* Cambia a un fondo más oscuro */
-    transition: background-color 0.3s ease; /* Transición suave */
+    background-color: rgba(0, 0, 0, 0.9); 
+    transition: background-color 0.3s ease; 
 }
 
 .navbar-custom.scrolled .nav-link,
 .navbar-custom.scrolled .navbar-brand {
-    color: lightgray !important; /* Cambia el color del texto */
+    color: lightgray !important; 
 }
 
 .main-content {
