@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/producto.css">
 </head>
-<body>
+<body transition-style="in:polygon:side-reveal">
     
     <div id="particles-js"></div>
     <nav class="navbar navbar-expand-lg navbar-custom">
@@ -31,40 +31,64 @@
         </div>
     </nav>
 
-  
-    <div class="main-content">
-        <div class="contenedor">
-            <!-- Sección existente -->
-            <div class="imagenes">
-                <img src="../img/a5.jpg" alt="Imagen 1">
-                <img src="../img/cl3.jpg" alt="Imagen 2">
-                <img src="../img/a3.jpg" alt="Imagen 3">
-            </div>
-            <div class="text">
-                <h1>Corte Láser</h1>
+    <!-- Carrusel de Bootstrap -->
+    <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="max-width: 900px; margin: 40px auto 0 auto;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/a3.jpg" class="d-block w-100" alt="Imagen Carrusel 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/ep1.jpg" class="d-block w-100" alt="Imagen Carrusel 2">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/a5.jpg" class="d-block w-100" alt="Imagen Carrusel 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+        
+        <div class="imagenes-extra">
+            <img src="../img/cl2.jpg" alt="Imagen 4">
+            <img src="../img/cl3.jpg" alt="Imagen 5">
+            <div class="texto-extra">
+                <h1>Corte Laser</h1>
                 <p>
-                    Equipo de corte de alta tecnología (láser CNC) con capacidad para calibres desde 30 hasta ¼,
-                    y apto para materiales tanto comunes como especiales (lámina pre-pintada, acero inoxidable y aluminio con recubrimiento de vinilo).
+                   Equipo de corte de alta tecnología (láser CNC) con capacidad 
+                   para calibres desde 30 hasta ¼", apto para materiales comunes 
+                   y especiales como lámina pre-pintada, acero inoxidable y aluminio 
+                   con recubrimiento de vinilo.
                 </p>
             </div>
         </div>
 
-        <div class="imagenes-extra">
-            <img src="../img/p1.jpg" alt="Imagen 4">
-            <img src="../img/p3.jpg" alt="Imagen 5">
-            <div class="texto-extra">
+
+        <div class="contenedor inverso">
+            <div class="texto">
                 <h1>Punzonado</h1>
                 <p>
                     Máquinas CNC con torretas de 24, 36 y 58 herramientas, 
                     sistema autoindex y capacidad de punzonado de 20 a 30 toneladas 
                     por golpe, con servomotor en el sistema de percusión para mayor precisión y eficiencia.
                 </p>
+                
+            </div>
+            <div class="imagenes">
+                <img src="../img/p1.jpg" alt="Imagen 6">
+                <img src="../img/p2.jpg" alt="Imagen 7">
             </div>
         </div>
 
-        
-        <div class="contenedor inverso">
-            <div class="texto">
+      <div class="imagenes-extra">
+            <img src="../img/a2.jpg" alt="Imagen 4">
+            <img src="../img/d3.jpg" alt="Imagen 5">
+            <div class="texto-extra">
                 <h1>Doblez</h1>
                 <p>
                     Equipos CNC con cortinas de seguridad para doblez en 
@@ -72,13 +96,264 @@
                     toneladas, ideales para trabajos de precisión en lámina metálica.
                 </p>
             </div>
+        </div>
+  
+        
+        <div class="contenedor inverso">
+            <div class="texto">
+                <h1>Soldadura</h1>
+                <p>
+                Contamos con equipos para soldadura TIC, MIG y por electro roscado 
+                para metales como acero inoxidable, aluminio, y soldadura con robot.</p>
+            </div>
             <div class="imagenes">
-                <img src="../img/db1.jpg" alt="Imagen 6">
-                <img src="../img/db2.jpg" alt="Imagen 7">
+                <img src="../img/d4.jpg" alt="Imagen 6">
+                <img src="../img/s1.jpg" alt="Imagen 7">
+            </div>
+        </div>
+
+    </div>
+
+
+     <div class="imagenes-extra">
+            <img src="../img/l1.jpg" alt="Imagen 4">
+            <img src="../img/l2.png" alt="Imagen 5">
+            <div class="texto-extra">
+                <h1>Troquelado y estampado.</h1>
+                <p>
+                   Prensas de estampado desde 30 hasta 500 toneladas, con capacidad 
+                   para trabajar con troqueles progresivos, transferencia manual y alta 
+                   producción.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="contenedor inverso">
+            <div class="texto">
+                <h1>Pintura Electrostática</h1>
+                <p>
+                   Línea profesional automatizada de aplicación de pintura en polvo, 
+                   que incluye fases de limpieza y sellado para asegurar una excelente 
+                   adherencia y acabado de alta calidad en piezas metálicas.
+                     </p> 
+                
+            </div>
+            <div class="imagenes">
+                <img src="../img/ep1.jpg" alt="Imagen 6">
+                <img src="../img/ep3.jpg" alt="Imagen 7">
+            </div>
+        </div>
+
+      <div class="imagenes-extra">
+            <img src="../img/k1.jpg" alt="Imagen 4">
+            <img src="../img/k2.jpg" alt="Imagen 5">
+            <div class="texto-extra">
+                <h1>Ensamble con Espuma de Poliuretano</h1>
+                <p>
+                   Ensamble de piezas con espuma de poliuretano 
+                   para la industria de la refrigeración, cumpliendo con l
+                   as especificaciones y estándares de calidad requeridos, 
+                   garantizando aislamiento térmico y resistencia estructural.
+                </p>
+            </div>
+        </div>
+  
+        
+        <div class="contenedor inverso">
+            <div class="texto">
+                <h1>Línea de Celdas para Ductos</h1>
+                <p>
+                Esta área cuenta con el equipo necesario para la fabricación de brazos de carga, incluyendo:
+
+<br>1 cizalla de corte.
+
+<br>1 máquina roladora.
+
+<br>2 máquinas de soldadura.
+
+<br>2 máquinas para codos.
+
+<br>1 máquina para abocardado (flared).
+
+<br>1 taladro (drilling).
+
+<br>Diseñada para garantizar precisión, resistencia y cumplimiento con los estándares requeridos en la fabricación de componentes para sistemas de carga.    
+                </p>
+            </div>
+            <div class="imagenes">
+                <img src="../img/cd1.jpg" alt="Imagen 6">
+                <img src="../img/cd3.jpg" alt="Imagen 7">
+            </div>
+        </div>
+
+    </div>
+    
+<div class="imagenes-extra">
+            <img src="../img/i1.jpg" alt="Imagen 4">
+            <img src="../img/i2.jpg" alt="Imagen 5">
+            <div class="texto-extra">
+                <h1>Inyección de Plástico</h1>
+                <p>
+                Contamos con máquinas de inyección con capacidad de 80 a 
+                220 toneladas, ideales para la fabricación de piezas plásticas
+                 de alta precisión. Este proceso garantiza uniformidad, calidad 
+                 y cumplimiento con los estándares de la industria, permitiendo la
+                  producción en serie de componentes con diversas geometrías y 
+                  aplicaciones.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="contenedor inverso">
+            <div class="texto">
+                <h1>Diseño y Fabricación de Herramentales</h1>
+                <p>
+                Contamos con la capacidad de diseñar y fabricar 
+                nuestros propios moldes, troqueles y herramientas, así como de 
+                brindarles mantenimiento. Esto nos permite ofrecer soluciones
+                 integrales, personalizadas y de alta precisión para distintos
+                  procesos de manufactura.
+
+   
+                </p>
+                
+            </div>
+            <div class="imagenes">
+                <img src="../img/h1.jpg" alt="Imagen 6">
+                <img src="../img/h4.jpg" alt="Imagen 7">
+            </div>
+        </div>
+
+     <div class="container text-center">
+    <h1 class="display-5 fw-bold">Productos</h1>
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen1.jpg" alt="Producto 1" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen2.jpg" alt="Producto 2" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen3.jpg" alt="Producto 3" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen4.jpg" alt="Producto 4" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen5.jpg" alt="Producto 5" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen6.jpg" alt="Producto 6" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen7.jpg" alt="Producto 7" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen8.jpg" alt="Producto 8" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen9.jpg" alt="Producto 9" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen10.jpg" alt="Producto 10" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+       
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen11.jpg" alt="Producto 11" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen12.png" alt="Producto 12" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen13.png" alt="Producto 13" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen14.jpg" alt="Producto 14" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen15.jpg" alt="Producto 15" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+      
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen16.jpg" alt="Producto 16" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen17.jpg" alt="Producto 17" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen18.jpg" alt="Producto 18" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen19.jpg" alt="Producto 19" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <img src="../img/prod/Imagen20.jpg" alt="Producto 20" class="img-fluid mb-2" style="max-height:100px;">
+                <div></div>
             </div>
         </div>
     </div>
-    <!-- Scripts -->
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="../js/index.js"></script>

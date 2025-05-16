@@ -31,22 +31,77 @@
         </div>
     </nav>
 
-    <!-- Contenido principal -->
-    <div class="main-content">
-        <div class="video-fondo">
-            <iframe 
-                width="100%" 
-                height="400" 
-                src="https://youtu.be/lLeJj0qvv0s?si=EOO47dmYRuIhxAuA" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+    <div class="container my-6">
+      <h1 class="text-center mb-4" style="color:#df0808;">Nuestras Ubicaciones</h1>
+      <div class="row g-4 justify-content-center">
+        <!-- Planta 1 con imagen, mapa y texto del mismo tamaño -->
+        <div class="col-md-12">
+          <div class="card h-100 shadow p-3">
+            <div class="row align-items-stretch">
+              <!-- Imagen izquierda -->
+              <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <img src="../img/ind.jpg" class="img-fluid rounded w-100 h-100 object-fit-cover" alt="Planta Matriz" style="max-height:320px; min-height:220px;">
+              </div>
+              <!-- Mapa centro -->
+              <div class="col-md-4 d-flex flex-column justify-content-center">
+                <div class="ratio ratio-16x9 mb-3" style="height: 100%;">
+                  <iframe src="https://www.google.com/maps?q=19.432608,-99.133209&z=15&output=embed" allowfullscreen="" loading="lazy" style="height:100%;"></iframe>
+                </div>
+                <!-- Texto debajo del mapa -->
+                <div class="text-center d-flex flex-column justify-content-center">
+                  <h5 class="card-title" style="color:#df0808;">Planta Matriz</h5>
+                  <p class="card-text mb-2">
+                    Calle Principal 123<br>
+                    Colonia Centro<br>
+                    Ciudad, Estado, CP 12345<br>
+                    Tel: (123) 456-7890
+                  </p>
+                </div>
+              </div>
+              <!-- Espacio derecho vacío para centrar -->
+              <div class="col-md-4"></div>
+            </div>
+          </div>
         </div>
+        <!-- Planta 2 -->
+        <div class="col-md-8">
+          <div class="card h-100 shadow">
+            <img src="../img/planta2.jpg" class="card-img-top" alt="Planta Norte">
+            <div class="card-body">
+              <h5 class="card-title" style="color:#df0808;">Planta Norte</h5>
+              <p class="card-text mb-2">
+                Avenida Industrial 456<br>
+                Parque Industrial<br>
+                Ciudad, Estado, CP 67890<br>
+                Tel: (987) 654-3210
+              </p>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps?q=20.659698,-103.349609&z=15&output=embed" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Planta 3 -->
+        <div class="col-md-8">
+          <div class="card h-100 shadow">
+            <img src="../img/plaa3.png" class="card-img-top" alt="Planta Sur">
+            <div class="card-body">
+              <h5 class="card-title" style="color:#df0808;">Planta Sur</h5>
+              <p class="card-text mb-4">
+                Calle Sur 789<br>
+                Zona Industrial<br>
+                Ciudad, Estado, CP 54321<br>
+                Tel: (555) 123-4567
+              </p>
+              <div class="ratio ratio-14x12">
+                <iframe src="https://www.google.com/maps?q=25.686614,-100.316113&z=15&output=embed" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="../js/index.js"></script>

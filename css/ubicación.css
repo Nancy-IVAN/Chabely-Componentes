@@ -44,60 +44,38 @@ body {
     flex-direction: column;
 }
 
-
-
-.welcome-text {
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(32, 32, 32, 0.5);
-    z-index: 10;
-    position: absolute; 
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-family: 'Playfair Display', serif; 
-    color: rgb(233, 233, 233); 
+.card {
+    min-height: 940px;
+    font-size: 1.18rem;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+    background: rgba(0,0,0,0.18);
 }
 
-.seccion-bienvenida {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    margin: 20px 25px; 
-    
-    border-radius: 45px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+/* Margen derecho solo para la primera card */
+.card.h-100.shadow.p-3 {
+    margin-right: 36px;
+    color: antiquewhite;
+    text-align: justify;
 }
 
-
-.welcome-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgb(255, 0, 0);
-    
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif; /* Fuente elegante */
+.card-body {
+    padding: 2.2rem 1.5rem 1.5rem 1.5rem;
 }
 
-.video-fondo {
-    position: relative;
-    width: calc(100% - 50px); /* Ajusta el ancho para respetar los márgenes */
-    height: 400px;
-    margin: 20px 25px; /* Mismos márgenes que la barra de navegación */
-    border-radius: 20px; /* Bordes redondeados */
-    overflow: hidden; /* Asegura que el contenido no se salga del contenedor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para un mejor efecto */
+.card-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
 }
 
-.video-fondo iframe {
-    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
-    height: 100%; /* El iframe ocupa toda la altura del contenedor */
-    border: none; /* Elimina el borde del iframe */
-    border-radius: 20px; /* Bordes redondeados para el iframe */
+.ratio {
+    min-height: 260px;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 
